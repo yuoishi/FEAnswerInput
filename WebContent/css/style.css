@@ -1,0 +1,178 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	text-align: center;
+	background: url(../images/bg.png) #bbbbbb;
+}
+
+/*トップ-------------------------*/
+#top {
+	position: relative;
+	top: 100px;
+	width: 1000px;
+	margin: 0 auto;
+}
+#top h1 {
+	font-size: 50px;
+	line-height: 1.2em;
+	letter-spacing: 0.4em;
+	margin-bottom: 100px;
+}
+#top input {
+	margin-bottom: 50px;
+	width: 300px;
+	height: 50px;
+	font-size: 30px;
+}
+/*------------------------*/
+
+/*ボタン------------------*/
+input[type="submit"] {
+	width: 200px;
+	height: 40px;
+	font-size: 18px;
+	border-radius: 50px;
+	color: #ddddaa;
+	background: linear-gradient(#3333ff,#000055);
+	margin-bottom: 30px;
+}
+input[type="submit"]:hover {
+	background: linear-gradient(#9999ff,#000088);
+}
+input[type="submit"]:active {
+	-ms-transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+}
+/*------------------------------*/
+
+/*共通部分-----------------------*/
+a {
+	font-size: 18px;
+}
+.a {
+	margin-right: 10px;
+}
+.p22 {
+	font-size: 22px;
+}
+
+.inlineblock {
+	display: inline-block;
+}
+/*-------------------------------*/
+
+/*メイン--------------------------*/
+#main {
+	width: 1000px;
+	margin: 10px auto 0;
+}
+#main h1 {
+	margin-bottom: 10px;
+}
+.alert {
+	color: #cc3322;
+}
+/*--------------------------------*/
+
+/*テーブルの基礎------------------------*/
+table {
+	width: 800px;
+	margin: 10px auto;
+	border-collapse: collapse;
+	border: 1px black solid;
+}
+th {
+	font-weight: normal;
+}
+th, td {
+	border: 1px black solid;
+	height: 35px;
+}
+/*--------------------------------*/
+
+/*table1(テーブルの設定を変えるもの)-------*/
+.table1 table{
+	width: 350px;
+	margin: 30px auto;
+	border-collapse: sepalate;
+	border: none;
+}
+.table1 th {
+	text-align: right;
+}
+.table1 th, .table1 td {
+	border: none;
+	height: 30px;
+}
+/*------------------------------------------*/
+
+/*問題選択テーブル----------------*/
+.es {
+	width: 350px;
+	margin: 30px auto;
+	border-collapse: sepalate;
+	border: none;
+}
+.es th {
+	font-weight: 700;
+}
+.es th, .es td {
+	border: none;
+	height: 30px;
+}
+/*--------------------------------*/
+
+/*問題解答------------------------*/
+.toi {
+	margin-left: 20px;
+	font-size: 22px;
+}
+/*--------------------------------*/
+
+/*スコアテーブル------------------*/
+.scoa {
+	width: 350px;
+	margin: 30px auto;
+	border-collapse: sepalate;
+	border: none;
+}
+.scoa th, .scoa td {
+	border: none;
+	height: 35px;
+}
+/*--------------------------------*/
+
+/*受験履歴------------------------*/
+.hoe th {
+	font-weight: bold;
+}
+.sort input[type="radio"]{
+	margin-left: 10px;
+	font-size: 20px;
+}
+.sort label {
+	font-size: 22px;
+}
+.sort table{
+	width: 400px;
+}
+/*--------------------------------*/
+
+/*ランキング----------------------*/
+#am, #pm {
+	margin-right: 30px;
+}
+#ranking th:first-child, #ranking td:first-child {
+	width: 150px;
+}
+#ranking th:nth-child(2), #ranking td:nth-child(2) {
+	width: 350px;
+}
+#ranking th:last-child, #ranking td:last-child {
+	width: 250px;
+}
+/*--------------------------------*/
