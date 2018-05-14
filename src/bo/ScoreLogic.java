@@ -140,11 +140,11 @@ public class ScoreLogic {
 					cnt++;
 					sb.append(",");
 				}
-				cntNum[i] = cnt;
-				corNum[i] = cor;
-				cnt = 0;
-				cor = 0;
 			}
+			cntNum[i] = cnt;
+			corNum[i] = cor;
+			cnt = 0;
+			cor = 0;
 		}
 
 		final int BORDER = 60;
