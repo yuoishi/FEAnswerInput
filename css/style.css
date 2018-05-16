@@ -1,0 +1,43 @@
+@charset "UTF-8";
+    body {
+      background : url("../image/bg.png");
+      text-align : center;
+    }
+    ul li {
+      list-style-type : none;
+      position : relative;
+      display : inline-block;
+      margin-right : 10px;
+    }
+    ul li a {
+      text-decoration : none;
+      color : #5533aa;
+      font-size: 18px;
+    }
+    h1 {
+      font-size : 36px;
+      color : #aaaaff;
+    }
+    #wrap {
+      position : fixed;
+      right : 7%;
+      bottom : 10%;
+    }
+    #wrap p {
+      position : relative;
+      border-radius : 50%;
+      height : 100px;
+      width : 100px;
+      background : blue;
+    }
+    #wrap p a {
+      position: absolute;
+      top: 50%;
+      left : 50%;
+      margin-top: -1.0rem;
+      margin-left : -1.3rem;
+      text-decoration : none;
+      color : white;
+      font-size : 22px;
+      font-weight : bold;
+    }
