@@ -52,4 +52,5 @@ srcディレクトリ内のservletディレクトリ内のTopServlet.javaを
 MIT
 # References
 JavaMailを使ってGmailのSMTPでメールを送信するとき - Qiita
+
 https://qiita.com/yoh-nak/items/bff51637fa4f558b37ac
