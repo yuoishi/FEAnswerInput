@@ -32,8 +32,11 @@ srcディレクトリ内のservletディレクトリ内のMailServlet.java内の
 93行目～96行目までの
 
 /*下の3つの値を適切なものに書き換えてください。*/
+
 String mail_address = "送信元のメールアドレス";
+
 String account_password = "送信元のアカウントのパスワード";
+
 String account_name = "送信元のアカウント名";
 
 をご自身で用意したメールアカウントの値に書き換えてください
