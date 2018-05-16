@@ -2,89 +2,119 @@
 <html>
   <head>
     <title>FEAnserInputの使い方</title>
-    <style>
-      body {
-        background : url("./image/bg.png");
-      }
-      ul li {
-        list-style-type : none;
-        position : relative;
-        display : inline-block;
-      }
-      ul li a {
-        text-decoration : none;
-        clor : #553399;
-      }
-      h1 {
-        font-size : 36px;
-        color : #aaaaff;
-      }
-      h1, #main{
-        text-align : center;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
       <h1>FEAnserInputの使い方</h1>
       <ul>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
-        <li><a href="#exam"></a></li>
+        <li><a href="#reg">新規登録処理</a></li>
+        <li><a href="#exam">問題選択処理</a></li>
+        <li><a href="#am">解答欄・採点処理（午前編）</a></li>
+        <li><a href="#pm">解答欄・採点処理（午後編）</a></li>
+        <li><a href="#hoe">受験履歴表示</a></li>
+        <li><a href="#ranking">ランキング表示</a></li>
+        <li><a href="#repw">パスワード再設定処理</a></li>
       </ul>
     </header>
     <div id=main>
       <h2 id="reg">新規登録処理</h2>
       <image src="./image/top.jpg">
-      <p>新規登録はこちらからをクリック</p>
+      <p>「新規登録はこちらから」をクリック</p>
       <image src="./image/reg.jpg">
-      <p>画面の指示に従って項目を入力後確認ボタンをクリック</p>
+      <p>画面の指示に従って項目を入力後「確認」ボタンをクリック</p>
       <image src="./image/regcon.jpg">
-      <p>入力内容に間違いない場合は登録ボタンを押下</p>
-      <p>修正したい場合は修正ボタンを押下</p>
+      <p>入力内容に間違いない場合は「登録」ボタンを押下</p>
+      <p>修正したい場合は「修正」ボタンを押下</p>
       <image src="./image/regcom.jpg">
-      <p>ログインボタンを押下後<a href="exam">問題選択処理へ</a></p>
+      <p>「ログイン」ボタンを押下</p>
+      <image src="./image/login.jpg">
+      <p>画面の指示に従って項目を入力後「ログイン」ボタンを押下後<a href="#exam">問題選択処理へ</a></p>
 
       <h2 id="exam">問題選択処理</h2>
-      <image src="./image/login.jpg">
-      <p>画面の指示に従って項目を入力後ログインボタンを押下</p>
+      <h3>～年度別の場合～</h3>
       <image src="./image/exam.jpg">
-      <p>年度別は午前/午後を選択</p>
-      <p>午前・午後はそのまま</p>
-      <p>リンクをクリックすることで解答欄へ遷移</p>
+      <p>解答したい"問題年度のリンク"をクリック</p>
+      <image src="./image/exam4.jpg">
+      <p>「午前」をクリック<a href="#am">午前の解答欄へ</a></p>
+      <p>「午後」をクリック<a href="#pm">午後の解答欄へ</a></p>
+      <h3>～午前か午後指定の場合～</h3>
+      <image src="./image/exam.jpg">
+      <p>タイトル「基本情報技術者試験」の下の「午前」もしくは「午後」のリンクをクリックするか</p>
+      <p>午前もしくは午後と書かれているところまでスクロール</p>
+      <h4>午前の場合</h4>
+      <image src="./image/exam2.jpg">
+      <p>「午前」の下の"問題年度のリンク"をクリック<a href="#am">午前の解答欄へ</a></p>
+      <h4>午後の場合</h4>
+      <image src="./image/exam3.jpg">
+      <p>「午後」の下の"問題年度のリンク"をクリック<a href="#pm">午後の解答欄へ</a></p>
 
       <h2 id="am">解答欄・採点処理（午前編）</h2>
       <image src="./image/ans.jpg">
+      <p>解答は未入力でも採点されます</p>
       <image src="./image/ans2.jpg">
-      <p></p>
+      <p>解答後「採点」ボタンを押下</p>
+      <image src="./image/score.jpg">
+      <p>解答の成否のNは未解答の意味</p>
+      <p>「午後へ」ボタンを押下すると<a href="#pm">午後問題へ</a></p>
+      <p>「終了」ボタンを押下すると<a href="exam">問題選択処理へ</a></p>
+      <p>「受験履歴」をクリックすると<a href="hoe">受験履歴表示へ</a></p>
+      <p>「ランキング」をクリックすると<a href="ranking">ランキング表示へ</a></p>
 
       <h2 id="pm">解答欄・採点処理（午後編）</h2>
-      <image src="./image/.jpg">
-      <p></p>
+      <image src="./image/anspm.jpg">
+      <p>上部のチェックボックスは選択問題の選択欄</p>
+      <p>チェックを入れないと解答しても採点されないので注意</p>
+      <p>選択問題ならチェックを入れていれば、必須問題でも<br>解答が未入力でも採点されます</p>
+      <image src="./image/anspm2.jpg">
+      <p>チェックを一度入れたら必須問題と該当の選択問題の解答欄だけ表示されます</p>
+      <p>解答後「採点」ボタンを押下</p>
+      <image src="./image/score2.jpg">
+      <p>解答の成否のNは未解答の意味</p>
+      <p>「終了」ボタンを押下すると<a href="exam">問題選択処理へ</a></p>
+      <p>「受験履歴」をクリックすると<a href="hoe">受験履歴表示へ</a></p>
+      <p>「ランキング」をクリックすると<a href="ranking">ランキング表示へ</a></p>
 
-      <h2></h2>
-      <image src="./image/.jpg">
-      <p></p>
+      <h2 id="hoe">受験履歴表示</h2>
+      <image src="./image/exam3.jpg">
+      <p>問題選択画面からでも「受験履歴」をクリックすることで遷移できます</p>
+      <image src="./image/hoe.jpg">
+      <p>デフォルトは日時の降順でソートされて表示されています</p>
+      <image src="./image/hoe2.jpg">
+      <p>「ソート方法」の下のラジオボタンでソートする方法を変えることが出来ます</p>
+      <p>日時 > 年度（降順/昇順） >  得点（降順/昇順） > 午前/午後</p>
+      <p>の優先度でソートがかかります（）の中の/はどちらか一方だけ選択できる</p>
+      <p>ソート方法を選択した後「ソート」ボタンを押下後ソートがかかった状態で再表示</p>
 
-      <h2></h2>
-      <image src="./image/.jpg">
-      <p></p>
+      <h2 id="ranking">ランキング表示</h2>
+      <image src="./image/ranking.jpg">
+      <p>得点の上位10人までを表示</p>
+      <p>年度ごと・午前のみ・午後のみ別にランキング表示</p>
 
-      <h2></h2>
-      <image src="./image/.jpg">
-      <p></p>
+      <h2 id="reset">パスワード再設定処理</h2>
+      <image src="./image/login.jpg">
+      <p>「パスワードを忘れた方はこちらから」をクリック</p>
+      <image src="./image/reset.jpg">
+      <p>画面の指示に従って項目を入力後「送信」ボタンを押下</p>
+      <p>「送信」ボタンが押下されると登録されたメールアドレス宛にパスコード付きのメールが送信されます</p>
+      <image src="./image/mail.jpg">
+      <p>メールに記載されたパスコードを入力後「送信」ボタンを押下</p>
+      <p>メールの再送を希望する場合は「メールの再送」ボタンを押下</p>
+      <image src="./image/repw.jpg">
+      <p>入力されたパスコードが正しいとこの画面に遷移します</p>
+      <p>画面の指示に従って項目を入力後「登録」ボタンを押下</p>
+      <p>登録に成功したらログイン画面からログインを行ってください</p>
+      <p>↓ログイン画面</p>
+      <image src="./image/login.jpg">
 
-      <h2></h2>
-      <image src="./image/.jpg">
-      <p></p>
+      <!--上に戻るの部品-->
+      <div id="wrap">
+        <p><a href="#top" class="sample">上へ</a></p>
+      </div>
 
     </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.smoothscroll.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
